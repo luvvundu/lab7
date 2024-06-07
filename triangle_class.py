@@ -4,9 +4,9 @@ class IncorrectTriangleSides(Exception):
 class Triangle:
     def __init__(self, side1, side2, side3):
         if side1 <= 0 or side2 <= 0 or side3 <= 0:
-            raise IncorrectTriangleSides("Стороны должны быть положительными")
+            raise IncorrectTriangleSides("Стороны должны быть положительными!!!")
         if side1 + side2 <= side3 or side1 + side3 <= side2 or side2 + side3 <= side1:
-            raise IncorrectTriangleSides("Ссума двух сторон не может быть меньше 3 стороны")
+            raise IncorrectTriangleSides("Сумма двух сторон не может быть меньше 3 стороны!!!")
 
         self.side1 = side1
         self.side2 = side2
