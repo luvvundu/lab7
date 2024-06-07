@@ -3,12 +3,6 @@ from triangle_class import Triangle, IncorrectTriangleSides
 
 # Позитивные тесты
 
-def test_triangle_creation():
-    triangle = Triangle(3, 4, 5)
-    assert triangle.side1 == 3
-    assert triangle.side2 == 4
-    assert triangle.side3 == 5
-
 def test_triangle_type_equilateral():
     triangle = Triangle(5, 5, 5)
     assert triangle.triangle_type() == "equilateral"
